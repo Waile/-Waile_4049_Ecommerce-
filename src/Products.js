@@ -1,19 +1,10 @@
-// import PropPractice from "./PropPractice";
-// import StylePractice from "./StylePractice";
-// import Login from "./Login";
-import { Route, Routes } from "react-router-dom";
-import Cards2 from "./Cards2";
-import Navbar from "./Components/Navbar";
-import Home from "./Components/Home";
-import About from "./Components/About";
-import Contact from "./Components/Contact";
-import Products from "./Products";
-// import Signup from "./Signup";
-// import PropsData from "./PropsData";
-// import TransferData from "./TransferData";
+import React from 'react'
+import Cards2 from './Cards2';
 
-function App() {
-  let products = [
+const Products = () => {
+
+
+      let products = [
     {
       id: 1,
       title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -283,26 +274,10 @@ function App() {
   ];
 
   return (
-    <>
-      {/* <PropPractice />
-      <StylePractice /> */}
-      {/* <TransferData /> */}
-      {/* <PropsData data={user} /> */}
-      {/* <PropsData /> */}
-      {/* <Signup /> */}
-      {/* <Login /> */}
-      {/* <Products /> */}
-      {/* <Cards2 data={products}/> */}
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/aboutus" element={<About/>}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
-        <Route path="/products" element={<Products />}></Route>
-      </Routes>
-      {/* <Products /> */}
+      <>
+      <Cards2 data={products} />
     </>
-  );
+  )
 }
 
-export default App;
+export default Products
